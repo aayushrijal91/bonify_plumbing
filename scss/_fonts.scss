@@ -15,7 +15,3 @@ $asset-path: "../fonts/";
 
 @include font-face("Baukasten", "HomepageBaukasten-Book", 400);
 @include font-face("Baukasten", "HomepageBaukasten-Bold", 800);
-
-body {
-    @apply font-baukasten
-}
