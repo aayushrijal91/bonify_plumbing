@@ -12,23 +12,16 @@ body {
     padding: 0;
 }
 
-.btn {
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.125rem;
-    line-height: 1;
-    font-weight: 700;
+.container {
+    max-width: 1300px;
+}
 
-    @media screen and (max-width: 540px) {
-        font-size: 0.875rem;
-    }
+.boldBtn {
+    @apply h-[60px] inline-flex items-center justify-center bg-primary rounded-full px-6 text-white font-poppins font-medium text-xl;
+}
 
-    &:focus {
-        box-shadow: none;
-        outline: 0;
-    }
+.borderBtn {
+    @apply h-[60px] inline-flex items-center justify-center border-2  rounded-full px-6  font-poppins font-medium text-xl;
 }
 
 //Go To Top

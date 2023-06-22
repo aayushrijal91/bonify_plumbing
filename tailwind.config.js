@@ -13,10 +13,12 @@ module.exports = {
         'dark': '#040505',
         'white': '#ffffff',
         'black': '#000000',
+        'grey': '#555656',
+        'light-grey': '#f5f5f5'
       },
       fontFamily: {
-        raleway: ['Raleway', 'sans-serif'],
-        faktum: ['Faktum', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        baukasten: ['Baukasten', 'sans-serif'],
       }
     },
   },

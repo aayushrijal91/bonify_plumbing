@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $asset-path: "../fonts/";
 
@@ -6,16 +6,16 @@ $asset-path: "../fonts/";
 @mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
     @font-face {
         font-family: $font-family;
-        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+        src: local($font-file), url($asset-path + $font-file + ".ttf") format("truetype"),
             url($asset-path + $font-file + ".otf") format("opentype");
         font-weight: $weight;
         font-style: $style;
     }
 }
 
-@include font-face("Faktum", "Faktum Test Regular", 400);
-@include font-face("Faktum", "Faktum Test Bold", 700);
+@include font-face("Baukasten", "HomepageBaukasten-Book", 400);
+@include font-face("Baukasten", "HomepageBaukasten-Bold", 800);
 
 body {
-    @apply font-raleway
+    @apply font-baukasten
 }

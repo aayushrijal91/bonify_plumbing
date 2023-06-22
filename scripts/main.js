@@ -23,3 +23,11 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$('.gallery').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: false,
+    centerPadding: "220px"
+});

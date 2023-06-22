@@ -1,8 +1,8 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Tailwind Landing Page Template";
-$phone_number = "0432 406 340";
+$site = "Bonify Plumbing";
+$phone_number = "1300 000 000";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';

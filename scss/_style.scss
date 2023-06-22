@@ -1,0 +1,49 @@
+.banner {
+    background: linear-gradient(90deg, #2F2F2F 0%, rgba(52, 51, 51, 0.00) 100%), imgUrl('banner.jpg');
+    background-size: cover;
+
+    ul.bannerList {
+        list-style-image: url('../images/icons/tick.png');
+    }
+}
+
+section.heroForm {
+    background: imgUrl('form.png') right top #C62026;
+    background-size: contain;
+
+    form.form {
+        .form-control {
+            @apply border-b;
+
+            input,
+            select {
+                @apply w-full outline-none text-xl transition ease-in-out delay-100;
+            }
+
+            &:focus {
+                @apply border-red-500;
+            }
+        }
+    }
+}
+
+section.about {
+    .about_wrapper {
+        background: linear-gradient(90deg, #000000 0%, rgba(52, 51, 51, 0.00) 100%), imgUrl('about.jpg');
+    }
+
+    .gallery {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            margin: 0 10px;
+            img {
+                border-radius: 16px;
+                height: 100%;
+            }
+        }
+    }
+}
