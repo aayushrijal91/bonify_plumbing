@@ -38,7 +38,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ccc;
+    @apply bg-primary;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -88,10 +88,6 @@ body {
     transform: translateX(-50%) translateY(-50%);
     width: 20px;
     height: 20px;
-
-    // @include media-breakpoint-up(xxl) {
-    //     left: -4%;
-    // }
 
     &:before {
         content: "";
