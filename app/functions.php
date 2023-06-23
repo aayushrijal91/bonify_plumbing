@@ -2,7 +2,7 @@
 include __DIR__ . '/env.php';
 
 $site = "Bonify Plumbing & Maintenance";
-$phone_number = "03 70439300";
+$phone_number = "03 7043 9300";
 $admin_email = 'arijal@aiims.com.au'; // 'enquiries@bonifyplumbing.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@bonifyplumbing.com.au';

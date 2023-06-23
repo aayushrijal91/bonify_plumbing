@@ -46,7 +46,7 @@
                     <div class="text-white py-7 md:py-12 text-xl md:text-2xl font-bold text-center md:text-start">Melbourne's most trusted Plumbing Specialists</div>
                     <ul class="bannerList text-white font-poppins font-medium text-lg md:text-xl pl-6 flex flex-col items-center md:items-start gap-y-2 text-center md:text-start">
                         <li>Family owned and operated</li>
-                        <li>High experienced and trustworthy plumbers</li>
+                        <li class="w-[76%] md:w-full">High experienced and trustworthy plumbers</li>
                         <li>Affordable Rates</li>
                     </ul>
                 </div>
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="w-full md:w-1/2 xl:w-5/12 px-2">
-                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain md:bg-cover bg-center h-[348px] md:h-[450px] lg:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
+                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-cover h-[348px] md:h-[450px] lg:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
                     <div>
                         <?= renderImg('reverse-vector.png', 'background', 'w-full') ?>
                         <div class="bg-primary p-10 pt-0 xl:p-[60px] lg:pt-0 text-white text-2xl lg:text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
