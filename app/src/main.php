@@ -2,7 +2,12 @@
     <div class="container py-5">
         <div class="flex flex-wrap justify-between items-center gap-y-7">
             <div class="w-1/2 md:w-fit px-5 md:px-0"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
-            <div class="text-white text-base md:text-xl font-bold w-1/2 md:w-fit">Operating 24/7</div>
+            <div class="w-1/2 md:w-fit flex items-center">
+                <div class="relative w-[20px]">
+                    <div class="pulse pulsating-circle"></div>
+                </div>
+                <div class="text-white text-base md:text-xl font-bold">Operating 24/7</div>
+            </div>
             <div class="w-full md:w-fit flex flex-wrap items-center md:-mx-2">
                 <div class="w-1/2 md:w-fit px-2">
                     <a href="tel:<?= $phone_number ?>" class="text-white text-lg md:text-xl font-medium font-poppins flex items-center justify-center gap-x-2">
