@@ -1,11 +1,11 @@
 <header class="bg-dark">
     <div class="container py-5">
-        <div class="flex flex-wrap justify-between items-center">
-            <div><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
-            <div class="text-white text-xl font-bold">Operating 24/7</div>
-            <div class="flex flex-wrap items-center md:-mx-2">
-                <div class="px-2">
-                    <a href="tel:<?= $phone_number ?>" class="text-white text-xl font-medium font-poppins flex items-center justify-center gap-x-2">
+        <div class="flex flex-wrap justify-between items-center gap-y-7">
+            <div class="w-1/2 md:w-fit px-5 md:px-0"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
+            <div class="text-white text-base md:text-xl font-bold w-1/2 md:w-fit">Operating 24/7</div>
+            <div class="w-full md:w-fit flex flex-wrap items-center md:-mx-2">
+                <div class="w-1/2 md:w-fit px-2">
+                    <a href="tel:<?= $phone_number ?>" class="text-white text-lg md:text-xl font-medium font-poppins flex items-center justify-center gap-x-2">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.2542 11.874 13.0664 11.8667 12.8868 11.909C12.7072 11.9513 12.5424 12.0415 12.41 12.17L10.21 14.37C7.37119 12.9262 5.06378 10.6188 3.62 7.78L5.82 5.57C5.95245 5.44434 6.04632 5.28352 6.0906 5.1064C6.13488 4.92928 6.12773 4.7432 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM16 9H18C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948211 11.3869 0 9 0V2C12.87 2 16 5.13 16 9ZM12 9H14C14 6.24 11.76 4 9 4V6C10.66 6 12 7.34 12 9Z" fill="#C62026" />
                         </svg>
@@ -13,8 +13,8 @@
                         <?= $phone_number ?>
                     </a>
                 </div>
-                <div class="px-2">
-                    <a href="#form" class="boldBtn">Book Now</a>
+                <div class="w-1/2 md:w-fit px-2">
+                    <a href="#form" class="boldBtn w-full">Book Now</a>
                 </div>
             </div>
         </div>
@@ -22,10 +22,10 @@
 </header>
 
 <section class="bg-dark px-5">
-    <div class="banner rounded-2xl max-w-[1800px] h-[800px] mx-auto">
+    <div class="banner rounded-2xl max-w-[1800px] h-[750px] md:h-[800px] mx-auto">
         <div class="container h-full">
-            <div class="flex items-center h-full">
-                <div class="w-full lg:w-1/2">
+            <div class="flex justify-center md:justify-start md:items-center h-full">
+                <div class="w-10/12 lg:w-1/2 py-10">
                     <div class="rounded-full bg-white inline-flex px-5 py-4 gap-x-3">
                         <div><?= renderImg('google.png', 'icons') ?></div>
                         <div>
@@ -33,13 +33,13 @@
                                 <path d="M12 0L15.3856 7.34006L23.4127 8.2918L17.4781 13.7799L19.0534 21.7082L12 17.76L4.94658 21.7082L6.52191 13.7799L0.587322 8.2918L8.61436 7.34006L12 0Z" fill="#FF9900" />
                             </svg>
                         </div>
-                        <div class="font-xl font-poppins font-semibold">5 Star Google Reviews</div>
+                        <div class="text-base md:text-xl font-poppins font-semibold">5 Star Google Reviews</div>
                     </div>
-                    <div class="text-6xl text-white font-bold pt-10">
+                    <div class="text-4xl md:text-6xl text-white font-bold pt-10 text-center md:text-start">
                         Reliable Plumbers that always put the <span class="text-primary">Customer First</span>
                     </div>
-                    <div class="text-white py-12 text-2xl font-bold">Melbourne's most trusted Plumbing Specialists</div>
-                    <ul class="bannerList text-white font-poppins font-medium text-xl pl-6 flex flex-col gap-y-2">
+                    <div class="text-white py-7 md:py-12 text-xl md:text-2xl font-bold text-center md:text-start">Melbourne's most trusted Plumbing Specialists</div>
+                    <ul class="bannerList text-white font-poppins font-medium text-lg md:text-xl pl-6 flex flex-col items-center md:items-start gap-y-2 text-center md:text-start">
                         <li>Family owned and operated</li>
                         <li>High experienced and trustworthy plumbers</li>
                         <li>Affordable Rates</li>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="container py-5">
-        <div class="flex justify-between items-center md:-mx-2">
+        <div class="logo_slider flex justify-between items-center md:-mx-2">
             <div class="px-2"><?= renderImg('rheem.png', 'logo') ?></div>
             <div class="px-2"><?= renderImg('rinnai.png', 'logo') ?></div>
             <div class="px-2"><?= renderImg('everdure.png', 'logo') ?></div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="w-full md:w-5/12 px-2">
-                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain h-[348px] md:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
+                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain md:bg-cover h-[348px] md:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
                     <div>
                         <?= renderImg('reverse-vector.png', 'background', 'w-full') ?>
                         <div class="bg-primary p-10 pt-0 md:p-[60px] md:pt-0 text-white text-2xl md:text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
@@ -96,26 +96,59 @@
                     <div class="text-center text-3xl md:text-5xl font-bold"><span class="text-primary">Schedule</span> With Bonify Today</div>
                     <div class="py-10 md:py-16 w-full flex flex-col gap-y-10">
                         <div class="form-control">
+                            <div class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00002 6.66667C9.84097 6.66667 11.3334 5.17428 11.3334 3.33333C11.3334 1.49238 9.84097 0 8.00002 0C6.15907 0 4.66669 1.49238 4.66669 3.33333C4.66669 5.17428 6.15907 6.66667 8.00002 6.66667Z" fill="currentColor" />
+                                    <path d="M1.33335 16H14.6667C14.8435 16 15.0131 15.9298 15.1381 15.8047C15.2631 15.6797 15.3334 15.5101 15.3334 15.3333C15.3334 13.3884 14.5607 11.5232 13.1855 10.1479C11.8102 8.77262 9.94494 8 8.00002 8C6.0551 8 4.18984 8.77262 2.81457 10.1479C1.4393 11.5232 0.666687 13.3884 0.666687 15.3333C0.666687 15.5101 0.736925 15.6797 0.861949 15.8047C0.986973 15.9298 1.15654 16 1.33335 16Z" fill="currentColor" />
+                                </svg>
+                            </div>
+
                             <input type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-control">
+                            <div class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.1111 11.1111C14 11.1111 12.9333 10.9333 11.9378 10.6044C11.7815 10.5547 11.6146 10.5482 11.455 10.5858C11.2953 10.6234 11.1488 10.7035 11.0311 10.8178L9.07556 12.7733C6.55217 11.49 4.50114 9.43894 3.21778 6.91556L5.17333 4.95111C5.29106 4.83941 5.3745 4.69646 5.41386 4.53902C5.45322 4.38158 5.44687 4.21618 5.39556 4.06222C5.05836 3.03827 4.8873 1.96693 4.88889 0.888889C4.88889 0.4 4.48889 0 4 0H0.888889C0.4 0 0 0.4 0 0.888889C0 9.23556 6.76444 16 15.1111 16C15.6 16 16 15.6 16 15.1111V12C16 11.5111 15.6 11.1111 15.1111 11.1111ZM14.2222 8H16C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0V1.77778C11.44 1.77778 14.2222 4.56 14.2222 8ZM10.6667 8H12.4444C12.4444 5.54667 10.4533 3.55556 8 3.55556V5.33333C9.47556 5.33333 10.6667 6.52444 10.6667 8Z" fill="currentColor" />
+                                </svg>
+                            </div>
+
                             <input type="tel" name="phone" placeholder="Number" required>
                         </div>
                         <div class="form-control">
+                            <div class="icon">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0.75H14C14.3977 0.750397 14.779 0.90856 15.0602 1.18978C15.3414 1.471 15.4996 1.8523 15.5 2.25V3.5C15.5 3.54473 15.488 3.58864 15.4653 3.62716C15.4426 3.66568 15.4099 3.6974 15.3708 3.719L8.12075 7.719C8.08377 7.7394 8.04223 7.75009 8 7.75009C7.95777 7.75009 7.91623 7.7394 7.87925 7.719L0.62925 3.719C0.590085 3.6974 0.557434 3.66568 0.5347 3.62716C0.511966 3.58864 0.499983 3.54473 0.5 3.5V2.25C0.500397 1.8523 0.65856 1.471 0.939778 1.18978C1.221 0.90856 1.6023 0.750397 2 0.75ZM7.99988 8.49927C8.16891 8.49927 8.3352 8.45649 8.48325 8.3749L15.5 4.50415V11.7499C15.4996 12.1476 15.3414 12.5289 15.0602 12.8101C14.779 13.0913 14.3977 13.2495 14 13.2499H2C1.6023 13.2495 1.221 13.0913 0.939778 12.8101C0.65856 12.5289 0.500397 12.1476 0.5 11.7499V4.50415L7.5165 8.3749C7.66455 8.45649 7.83084 8.49927 7.99988 8.49927Z" fill="currentColor" />
+                                </svg>
+                            </div>
+
                             <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-control">
+                            <div class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.298 13.3829L15.943 10.6171C16.0487 10.4457 16.0017 10.2286 15.849 10.1029L14.11 8.77714C14.1452 8.52571 14.1687 8.26286 14.1687 8C14.1687 7.73714 14.1452 7.47429 14.11 7.21143L15.849 5.88571C16.0017 5.76 16.0487 5.54286 15.943 5.37143L14.298 2.60571C14.248 2.52389 14.1699 2.46184 14.0775 2.43049C13.985 2.39913 13.8842 2.40048 13.7927 2.43429L11.7482 3.23429C11.3252 2.91429 10.867 2.65143 10.3617 2.44571L10.0562 0.331429C10.0365 0.238997 9.98507 0.155835 9.91034 0.0956064C9.83561 0.0353774 9.74203 0.00166247 9.64499 0H6.35501C6.15526 0 5.97901 0.148571 5.94376 0.342857L5.63826 2.45714C5.14476 2.66286 4.67476 2.92571 4.25177 3.24571L2.20727 2.44571C2.01927 2.37714 1.80778 2.44571 1.70203 2.61714L0.0570325 5.38286C-0.0487171 5.55429 -0.00171709 5.77143 0.151032 5.89714L1.89002 7.22286C1.85477 7.47429 1.83128 7.73714 1.83128 8C1.83128 8.26286 1.85477 8.52571 1.89002 8.78857L0.151032 10.1143C-0.00171709 10.24 -0.0487171 10.4571 0.0570325 10.6286L1.70203 13.3943C1.80778 13.5657 2.01927 13.6343 2.20727 13.5657L4.25177 12.7657C4.67476 13.0857 5.13301 13.3486 5.63826 13.5543L5.94376 15.6686C5.97901 15.8514 6.15526 16 6.35501 16H9.64499C9.84474 16 10.021 15.8514 10.0562 15.6571L10.3617 13.5429C10.8552 13.3371 11.3252 13.0743 11.7482 12.7543L13.7927 13.5543C13.9807 13.6229 14.1922 13.5543 14.298 13.3829ZM8 10.2857C6.70751 10.2857 5.65001 9.25714 5.65001 8C5.65001 6.74286 6.70751 5.71429 8 5.71429C9.29249 5.71429 10.35 6.74286 10.35 8C10.35 9.25714 9.29249 10.2857 8 10.2857Z" fill="currentColor" />
+                                </svg>
+                            </div>
+
                             <select name="service" required>
                                 <option selected disabled>Select Services</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
+                                <option>Emergency Plumbing</option>
+                                <option>Blocked Drains</option>
+                                <option>Hot Water Service</option>
+                                <option>Toilet Repairs</option>
+                                <option>Burst Pipes</option>
+                                <option>Tap Repairs</option>
+                                <option>Gas Fittings & Repairs</option>
+                                <option>Gas Installation</option>
+                                <option>Strata & Real Estate Plumbing</option>
+                                <option>Leaking Taps & Toilets</option>
+                                <option>Pipe Relining</option>
+                                <option>Bathroom Renovations</option>
                             </select>
                         </div>
                     </div>
                     <button type="submit" class="boldBtn">Book Now</button>
-                    <div class="text-center text-base md:text-lg text-grey pt-5">Unsure of anything? Give us a <span class="text-primary font-bold">call</span></div>
+                    <div class="text-center text-base md:text-lg text-grey pt-5">Unsure of anything? Give us a <a href="tel:<?= $phone_number ?>" class="text-primary font-bold">call</a></div>
                 </form>
             </div>
         </div>

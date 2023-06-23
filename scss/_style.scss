@@ -2,8 +2,26 @@
     background: linear-gradient(90deg, #2F2F2F 0%, rgba(52, 51, 51, 0.00) 100%), imgUrl('banner.jpg');
     background-size: cover;
 
+    @media screen and (max-width: 540px){
+        background: imgUrl('banner_sm.jpg');
+        background-size: cover;
+    }
+
     ul.bannerList {
         list-style-image: url('../images/icons/tick.png');
+    }
+}
+
+.logo_slider {
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-slide {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -13,7 +31,11 @@ section.heroForm {
 
     form.form {
         .form-control {
-            @apply border-b;
+            @apply border-b flex items-center gap-x-2;
+
+            .icon {
+                @apply text-grey;
+            }
 
             input,
             select {
