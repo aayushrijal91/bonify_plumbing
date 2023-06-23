@@ -26,9 +26,11 @@ $('#return-to-top').on('click', () => {
 
 if ($(window).width() < 900) {
     $('.logo_slider').slick({
-        slidesToShow: 1,
+        slidesToShow: 3,
         centerMode: true,
         centerPadding: "120px",
+        arrows: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 540,
@@ -36,7 +38,6 @@ if ($(window).width() < 900) {
                     slidesToShow: 1,
                     centerMode: true,
                     arrows: false,
-                    autoplay: true,
                     centerPadding: "100px"
                 }
             }
@@ -50,14 +51,32 @@ $('.gallery').slick({
     centerMode: true,
     arrows: false,
     centerPadding: "220px",
-    responsive: [{
-        breakpoint: 540,
-        settings: {
-            slidesToShow: 1,
-            centerPadding: "60px",
-            arrows: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                centerPadding: "60px",
+                arrows: false,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+                centerPadding: "60px",
+                arrows: false,
+            }
+        },
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: "60px",
+                arrows: false,
+            }
         }
-    }]
+    ]
 });
 
 $('.form-control input, .form-control select').on('focus', function () {

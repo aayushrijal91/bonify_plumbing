@@ -71,6 +71,6 @@ section.about {
     }
 
     .about_card {
-        @apply  drop-shadow-md bg-white h-[140px] md:h-[310px] rounded-2xl p-10 md:p-14 flex md:flex-col justify-center items-center gap-y-5 space-x-5;
+        @apply  drop-shadow-md bg-white h-[140px] md:h-full lg:h-[310px] rounded-2xl p-10 lg:p-7 xl:p-14 flex md:flex-col justify-center items-center gap-y-5 space-x-5 md:space-x-0;
     }
 }

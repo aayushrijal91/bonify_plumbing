@@ -1,15 +1,15 @@
 <header class="bg-dark">
     <div class="container py-5">
         <div class="flex flex-wrap justify-between items-center gap-y-7">
-            <div class="w-1/2 md:w-fit px-5 md:px-0"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
-            <div class="w-1/2 md:w-fit flex items-center">
+            <div class="w-1/2 lg:w-fit px-5 md:px-0"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
+            <div class="w-1/2 lg:w-fit flex items-center justify-end px-5 md:px-1">
                 <div class="relative w-[20px]">
                     <div class="pulse pulsating-circle"></div>
                 </div>
                 <div class="text-white text-base md:text-xl font-bold">Operating 24/7</div>
             </div>
-            <div class="w-full md:w-fit flex flex-wrap items-center md:-mx-2">
-                <div class="w-1/2 md:w-fit px-2">
+            <div class="w-full lg:w-fit flex flex-wrap items-center xl:-mx-2">
+                <div class="w-1/2 lg:w-fit px-2">
                     <a href="tel:<?= $phone_number ?>" class="text-white text-lg md:text-xl font-medium font-poppins flex items-center justify-center gap-x-2">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.2542 11.874 13.0664 11.8667 12.8868 11.909C12.7072 11.9513 12.5424 12.0415 12.41 12.17L10.21 14.37C7.37119 12.9262 5.06378 10.6188 3.62 7.78L5.82 5.57C5.95245 5.44434 6.04632 5.28352 6.0906 5.1064C6.13488 4.92928 6.12773 4.7432 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM16 9H18C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948211 11.3869 0 9 0V2C12.87 2 16 5.13 16 9ZM12 9H14C14 6.24 11.76 4 9 4V6C10.66 6 12 7.34 12 9Z" fill="#C62026" />
@@ -18,7 +18,7 @@
                         <?= $phone_number ?>
                     </a>
                 </div>
-                <div class="w-1/2 md:w-fit px-2">
+                <div class="w-1/2 lg:w-fit px-2">
                     <a href="#form" class="boldBtn w-full">Book Now</a>
                 </div>
             </div>
@@ -26,11 +26,11 @@
     </div>
 </header>
 
-<section class="bg-dark px-5">
+<section class="bg-dark px-2 md:px-5">
     <div class="banner rounded-2xl max-w-[1800px] h-[750px] md:h-[800px] mx-auto">
         <div class="container h-full">
-            <div class="flex justify-center md:justify-start md:items-center h-full">
-                <div class="w-10/12 lg:w-1/2 py-10">
+            <div class="flex justify-center lg:justify-start md:items-center h-full">
+                <div class="w-10/12 lg:w-2/3 xl:w-1/2 py-10">
                     <div class="rounded-full bg-white inline-flex px-5 py-4 gap-x-3">
                         <div><?= renderImg('google.png', 'icons') ?></div>
                         <div>
@@ -70,19 +70,19 @@
 
     <div class="container py-16 md:py-36">
         <div class="flex flex-wrap -mx-2 gap-y-5">
-            <div class="w-full md:w-7/12 px-2">
-                <div class="bg-[url('../images/background/cta_left.jpg')] bg-no-repeat bg-cover h-[348px] md:h-[600px] w-full rounded-2xl p-10 md:p-[60px] flex items-end">
+            <div class="w-full md:w-1/2 xl:w-7/12 px-2">
+                <div class="bg-[url('../images/background/cta_left.jpg')] bg-no-repeat bg-cover h-[348px] md:h-[450px] lg:h-[600px] w-full rounded-2xl p-10 xl:p-[60px] flex items-end">
                     <div>
-                        <div class="text-white text-3xl md:text-5xl font-bold leading-tight pb-10 md:pb-12">24 Hour Emergency Response</div>
+                        <div class="text-white text-3xl lg:text-5xl font-bold leading-tight pb-10 md:pb-12">24 Hour Emergency Response</div>
                         <a href="#form" class="boldBtn">Enquire</a>
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-5/12 px-2">
-                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain md:bg-cover h-[348px] md:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
+            <div class="w-full md:w-1/2 xl:w-5/12 px-2">
+                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain md:bg-cover bg-center h-[348px] md:h-[450px] lg:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
                     <div>
                         <?= renderImg('reverse-vector.png', 'background', 'w-full') ?>
-                        <div class="bg-primary p-10 pt-0 md:p-[60px] md:pt-0 text-white text-2xl md:text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
+                        <div class="bg-primary p-10 pt-0 xl:p-[60px] lg:pt-0 text-white text-2xl lg:text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
                     </div>
                 </div>
             </div>
@@ -92,12 +92,12 @@
 
 <section class="heroForm py-16 md:py-36">
     <div class="container">
-        <div class="flex flex-wrap gap-y-5 md:-mx-2">
+        <div class="flex flex-wrap gap-y-5 lg:-mx-2">
             <div class="w-full lg:w-1/2 px-2 h-inherit">
                 <?= renderImg('form.jpg', 'lib', 'rounded-2xl w-full h-full') ?>
             </div>
             <div class="w-full lg:w-1/2 px-2 h-inherit">
-                <form action="" class="form rounded-2xl bg-white h-full w-full p-10 md:px-20 md:py-[60px] flex flex-col items-center">
+                <form action="" class="form rounded-2xl bg-white h-full w-full p-10 md:px-20 lg:px-10 xl:px-20 md:py-[60px] flex flex-col items-center">
                     <div class="text-center text-3xl md:text-5xl font-bold"><span class="text-primary">Schedule</span> With Bonify Today</div>
                     <div class="py-10 md:py-16 w-full flex flex-col gap-y-10">
                         <div class="form-control">
@@ -162,11 +162,11 @@
 
 <section class="about py-16 md:py-36 bg-light-grey">
     <div class="container">
-        <div class="about_wrapper rounded-2xl md:h-[600px] flex flex-wrap overflow-hidden">
-            <div class="w-full lg:w-1/2 flex flex-col items-center justify-center h-inherit text-center">
-                <div class="w-10/12 xl:w-9/12 pt-10 md:pt-0">
+        <div class="about_wrapper rounded-2xl lg:h-[600px] flex flex-wrap overflow-hidden items-end">
+            <div class="w-full md:w-1/2 flex items-center justify-center h-full text-center">
+                <div class="w-11/12 md:w-11/12 xl:w-9/12 py-10">
                     <div class="text-white text-3xl md:text-5xl font-bold">Why choose <span class="text-primary">Bonify?</span></div>
-                    <div class="text-white text-base md:text-xl py-10 md:py-12">
+                    <div class="text-white text-base lg:text-xl py-10 md:py-12">
                         If you're sick and tired of dealing with unreliable and big plumbing companies who don’t put you first, look no further. We guarantee to be the only plumbing company you will ever need. We will go above and beyond to give the highest quality and care for the task at hand.
                     </div>
                     <div class="flex justify-center md:-mx-2">
@@ -179,13 +179,13 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 h-inherit">
+            <div class="w-full md:w-1/2 h-inherit">
                 <?= renderImg('about_guy.png', 'lib', 'w-full') ?>
             </div>
         </div>
 
-        <div class="flex flex-wrap mt-12 md:-mx-2 gap-y-5">
-            <div class="w-full lg:w-1/4 px-2">
+        <div class="flex flex-wrap mt-12 lg:-mx-2 gap-y-5">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="about_card">
                     <div class="w-[86px] h-[85px]">
                         <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +197,7 @@
                     <div class="text-xl md:text-2xl md:text-center font-bold">We offer Upfront Pricing, no extra costs</div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="about_card">
                     <div class="w-[86px] h-[85px]">
                         <?= renderImg('on-the-spot.png', 'icons', 'w-[86px]') ?>
@@ -206,7 +206,7 @@
                     <div class="text-xl md:text-2xl md:text-center font-bold">On the spot Emergency Repairs</div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="about_card">
                     <div class="w-[86px] h-[85px]">
                         <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@
                     <div class="text-xl md:text-2xl md:text-center font-bold">Discounts for Seniors & New Customers</div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/4 px-2">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-2">
                 <div class="about_card">
                     <div class="w-[85px] h-[85px]">
                         <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,28 +241,28 @@
 
 <section class="py-16 md:py-36">
     <div class="container">
-        <div class="flex flex-wrap md:-mx-2 gap-y-5">
-            <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/blocked-drains.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
+        <div class="flex flex-wrap lg:-mx-2 gap-y-5 justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-2">
+                <div class="rounded-2xl h-[430px] lg:h-[520px] bg-[url('../images/background/blocked-drains.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                    <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
                         <div class="text-xl md:text-2xl font-bold">Blocked Drains from</div>
                         <div class="text-5xl font-bold">$69</div>
                     </div>
                     <?= renderImg('vector.png', 'background', 'w-full') ?>
                 </div>
             </div>
-            <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/tap-repairs.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-2">
+                <div class="rounded-2xl h-[430px] lg:h-[520px] bg-[url('../images/background/tap-repairs.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
                         <div class="text-xl md:text-2xl font-bold">Tap Repairs from</div>
                         <div class="text-5xl font-bold">$79</div>
                     </div>
                     <?= renderImg('vector.png', 'background', 'w-full') ?>
                 </div>
             </div>
-            <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/free.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-2">
+                <div class="rounded-2xl h-[430px] lg:h-[520px] bg-[url('../images/background/free.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
                         <div class="text-5xl font-bold">Free</div>
                         <div class="text-xl md:text-2xl font-bold">Home Inspection with any service valued at over $150</div>
                     </div>
@@ -274,16 +274,16 @@
 </section>
 
 <section class="service h-[900px] bg-[url('../images/background/service_sm.jpg')] md:bg-[url('../images/background/service.jpg')] bg-no-repeat bg-cover">
-    <div class="container text-center text-white py-10 md:py-36">
+    <div class="container text-center text-white py-10 xl:py-36">
         <div class="flex flex-wrap justify-center items-center">
-            <div class="w-10/12 lg:w-1/2 flex flex-col items-center">
+            <div class="w-10/12 xl:w-1/2 flex flex-col items-center">
                 <svg width="44" height="90" viewBox="0 0 44 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.535 90C11.8247 65.5911 36.6537 57.235 43.8766 30.12L37.832 19.2954C23.6309 53.7852 5.29039 55.4488 11.9395 80.8083C13.1255 85.1703 15.88 87.4088 18.535 90Z" fill="#C62026" />
                     <path d="M34.6109 13.6303L26.9977 0C16.7524 34.2598 4.22702 34.9268 0.76856 52.6509C-1.06779 62.0725 2.04635 68.1977 6.96623 74.9209C5.40534 45.0001 23.5622 46.2573 34.6109 13.6303Z" fill="white" />
                 </svg>
 
-                <div class="text-4xl md:text-6xl font-bold pt-10 pb-8 md:py-12">Bonify Services</div>
-                <div class="text-lg md:text-xl">Our highly experienced and professional team can do it all. No job is either too small or too big for our team</div>
+                <div class="text-4xl xl:text-6xl font-bold pt-10 pb-8 xl:py-12">Bonify Services</div>
+                <div class="text-lg lg:text-xl">Our highly experienced and professional team can do it all. No job is either too small or too big for our team</div>
             </div>
         </div>
     </div>
@@ -343,15 +343,15 @@
             ],
         ]
         ?>
-        <div class="flex flex-wrap gap-y-5 md:-mx-2">
+        <div class="flex flex-wrap gap-y-5 lg:-mx-2">
             <?php foreach ($services as $index => $service) : ?>
-                <div class="w-full lg:w-1/3 h-inherit px-2">
+                <div class="w-full md:w-1/2 lg:w-1/3 h-inherit px-2">
                     <div class="bg-white rounded-2xl drop-shadow-md overflow-hidden h-full flex flex-col">
                         <div class="h-[200px]"><?= renderImg('service-' . ($index + 1) . '.jpg', 'lib', 'w-full h-full') ?></div>
-                        <div class="p-10 md:p-[60px] flex-1 flex flex-col justify-between items-start">
+                        <div class="p-10 lg:p-8 xl:p-[60px] flex-1 flex flex-col justify-between items-start">
                             <div class="flex-1">
                                 <div class="text-dark text-xl md:text-2xl font-bold"><?= $service['title'] ?></div>
-                                <div class="text-grey text-base md:text-xl py-7"><?= $service['description'] ?></div>
+                                <div class="text-grey text-base xl:text-xl py-7"><?= $service['description'] ?></div>
                             </div>
                             <a href="#" class="borderBtn border-grey text-grey">Enquire</a>
                         </div>
@@ -364,16 +364,16 @@
 
 <section class="about py-16 md:py-36">
     <div class="container">
-        <div class="about_wrapper rounded-2xl md:h-[600px] flex flex-wrap overflow-hidden">
-            <div class="w-full lg:w-1/2 flex flex-col items-center justify-center h-inherit text-center">
-                <div class="w-10/12 xl:w-9/12 pt-10 md:pt-0">
+        <div class="about_wrapper rounded-2xl lg:h-[600px] flex flex-wrap items-end overflow-hidden">
+            <div class="w-full md:w-1/2 flex items-center justify-center h-full text-center">
+                <div class="w-10/12 xl:w-9/12 py-10">
                     <div class="text-white text-3xl md:text-5xl font-bold">What do <span class="text-primary">we do?</span></div>
-                    <div class="text-white text-base md:text-xl py-10 md:py-12">
+                    <div class="text-white text-base lg:text-xl pt-10 md:pt-12">
                         Bonify Plumbing and Maintenance is a family-owned company unlike our competitors, so you know that you’re getting a reputable and professional local Melbourne plumbing and maintenance company offering quality and precise emergency plumbing works. Bonify Plumbing and Maintenance is reliable and focused on customer satisfaction from the beginning to the end. We operate 24/7 so we can always be there when you need a trustworthy plumber to get you out of trouble!
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 h-inherit">
+            <div class="w-full md:w-1/2 h-inherit">
                 <?= renderImg('what-do-we-do-guy.png', 'lib', 'w-full') ?>
             </div>
         </div>
@@ -401,16 +401,16 @@
 
 <footer class="bg-dark py-10 md:py-5">
     <div class="container">
-        <div class="flex flex-wrap justify-center md:justify-between items-center gap-y-14">
-            <div class="md:visible"><a href="./"><?= renderImg('footer_logo_sm.png', 'logo') ?></a></div>
-            <div class="hidden md:visible"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
-            <div class="w-full md:hidden text-[#DADADA] text-sm text-center flex flex-col gap-y-5">
+        <div class="flex flex-wrap justify-center lg:justify-between items-center gap-y-14">
+            <div class="lg:hidden"><a href="./"><?= renderImg('footer_logo_sm.png', 'logo') ?></a></div>
+            <div class="hidden lg:block"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
+            <div class="w-full lg:hidden text-[#DADADA] text-sm text-center flex flex-col gap-y-5">
                 <div>Copyright <?= date('Y') ?></div>
                 <div><?= $site ?></div>
                 <div>All Rights Reserved</div>
             </div>
-            <div class="text-[#DADADA] text-sm hidden md:visible">
-                Copyright <?= date('Y') ?> <span class="px-10">|</span> <?= $site ?> <span class="px-10">|</span> All Rights Reserved
+            <div class="text-[#DADADA] text-sm hidden lg:block">
+                Copyright <?= date('Y') ?> <span class="px-3 xl:px-10">|</span> <?= $site ?> <span class="px-3 xl:px-10">|</span> All Rights Reserved
             </div>
             <div><a href="https://www.aiims.com.au" target="_blank"><?= renderImg('aiims.png', 'logo') ?></a></div>
         </div>
