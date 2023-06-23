@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Bonify Plumbing";
+$site = "Bonify Plumbing & Maintenance";
 $phone_number = "1300 000 000";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";

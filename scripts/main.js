@@ -29,5 +29,13 @@ $('.gallery').slick({
     slidesToScroll: 1,
     centerMode: true,
     arrows: false,
-    centerPadding: "220px"
+    centerPadding: "220px",
+    responsive: [{
+        breakpoint: 540,
+        settings: {
+            slidesToShow: 1,
+            centerPadding: "60px",
+            arrows: false,
+        }
+    }]
 });

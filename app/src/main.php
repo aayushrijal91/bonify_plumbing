@@ -1,9 +1,9 @@
 <header class="bg-dark">
     <div class="container py-5">
-        <div class="flex justify-between items-center">
+        <div class="flex flex-wrap justify-between items-center">
             <div><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
             <div class="text-white text-xl font-bold">Operating 24/7</div>
-            <div class="flex items-center -mx-2">
+            <div class="flex flex-wrap items-center md:-mx-2">
                 <div class="px-2">
                     <a href="tel:<?= $phone_number ?>" class="text-white text-xl font-medium font-poppins flex items-center justify-center gap-x-2">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
     </div>
 
     <div class="container py-5">
-        <div class="flex justify-between items-center -mx-2">
+        <div class="flex justify-between items-center md:-mx-2">
             <div class="px-2"><?= renderImg('rheem.png', 'logo') ?></div>
             <div class="px-2"><?= renderImg('rinnai.png', 'logo') ?></div>
             <div class="px-2"><?= renderImg('everdure.png', 'logo') ?></div>
@@ -63,35 +63,38 @@
         </div>
     </div>
 
-    <div class="container py-36">
-        <div class="flex -mx-2 cta">
+    <div class="container py-16 md:py-36">
+        <div class="flex flex-wrap -mx-2 gap-y-5">
             <div class="w-full md:w-7/12 px-2">
-                <div class="bg-[url('../images/background/cta_left.jpg')] bg-no-repeat bg-cover min-h-[600px] w-full rounded-2xl p-[60px] flex items-end">
+                <div class="bg-[url('../images/background/cta_left.jpg')] bg-no-repeat bg-cover h-[348px] md:h-[600px] w-full rounded-2xl p-10 md:p-[60px] flex items-end">
                     <div>
-                        <div class="text-white text-5xl font-bold leading-tight pb-12">24 Hour Emergency Response</div>
+                        <div class="text-white text-3xl md:text-5xl font-bold leading-tight pb-10 md:pb-12">24 Hour Emergency Response</div>
                         <a href="#form" class="boldBtn">Enquire</a>
                     </div>
                 </div>
             </div>
             <div class="w-full md:w-5/12 px-2">
-                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-cover min-h-[600px] w-full rounded-2xl p-[60px] flex items-end">
-                    <div class="text-white text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
+                <div class="bg-[url('../images/background/cta_right.jpg')] bg-no-repeat bg-contain h-[348px] md:h-[600px] w-full rounded-2xl flex items-end overflow-hidden">
+                    <div>
+                        <?= renderImg('reverse-vector.png', 'background', 'w-full') ?>
+                        <div class="bg-primary p-10 pt-0 md:p-[60px] md:pt-0 text-white text-2xl md:text-4xl font-bold leading-tight text-center">Same Day Services or we give you $50 Off</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="heroForm py-36">
+<section class="heroForm py-16 md:py-36">
     <div class="container">
-        <div class="flex -mx-2">
+        <div class="flex flex-wrap gap-y-5 md:-mx-2">
             <div class="w-full lg:w-1/2 px-2 h-inherit">
                 <?= renderImg('form.jpg', 'lib', 'rounded-2xl w-full h-full') ?>
             </div>
             <div class="w-full lg:w-1/2 px-2 h-inherit">
-                <form action="" class="form rounded-2xl bg-white h-full w-full px-20 py-[60px] flex flex-col items-center">
-                    <div class="text-center text-5xl font-bold"><span class="text-primary">Schedule</span> With Bonify Today</div>
-                    <div class="py-16 w-full flex flex-col gap-y-10">
+                <form action="" class="form rounded-2xl bg-white h-full w-full p-10 md:px-20 md:py-[60px] flex flex-col items-center">
+                    <div class="text-center text-3xl md:text-5xl font-bold"><span class="text-primary">Schedule</span> With Bonify Today</div>
+                    <div class="py-10 md:py-16 w-full flex flex-col gap-y-10">
                         <div class="form-control">
                             <input type="text" name="name" placeholder="Name" required>
                         </div>
@@ -112,23 +115,23 @@
                         </div>
                     </div>
                     <button type="submit" class="boldBtn">Book Now</button>
-                    <div class="text-center text-lg text-grey pt-5">Unsure of anything? Give us a <span class="text-primary font-bold">call</span></div>
+                    <div class="text-center text-base md:text-lg text-grey pt-5">Unsure of anything? Give us a <span class="text-primary font-bold">call</span></div>
                 </form>
             </div>
         </div>
     </div>
 </section>
 
-<section class="about py-36 bg-light-grey">
+<section class="about py-16 md:py-36 bg-light-grey">
     <div class="container">
-        <div class="about_wrapper rounded-2xl h-[600px] flex flex-wrap overflow-hidden">
+        <div class="about_wrapper rounded-2xl md:h-[600px] flex flex-wrap overflow-hidden">
             <div class="w-full lg:w-1/2 flex flex-col items-center justify-center h-inherit text-center">
-                <div class="w-11/12 xl:w-9/12">
-                    <div class="text-white text-5xl font-bold">Why choose <span class="text-primary">Bonify?</span></div>
-                    <div class="text-white text-xl py-12">
+                <div class="w-10/12 xl:w-9/12 pt-10 md:pt-0">
+                    <div class="text-white text-3xl md:text-5xl font-bold">Why choose <span class="text-primary">Bonify?</span></div>
+                    <div class="text-white text-base md:text-xl py-10 md:py-12">
                         If you're sick and tired of dealing with unreliable and big plumbing companies who don’t put you first, look no further. We guarantee to be the only plumbing company you will ever need. We will go above and beyond to give the highest quality and care for the task at hand.
                     </div>
-                    <div class="flex justify-center -mx-2">
+                    <div class="flex justify-center md:-mx-2">
                         <div class="px-2">
                             <a href="#form" class="boldBtn">Book Now</a>
                         </div>
@@ -142,9 +145,10 @@
                 <?= renderImg('about_guy.png', 'lib', 'w-full') ?>
             </div>
         </div>
-        <div class="flex flex-wrap mt-12 -mx-2">
+
+        <div class="flex flex-wrap mt-12 md:-mx-2 gap-y-5">
             <div class="w-full lg:w-1/4 px-2">
-                <div class="drop-shadow-md bg-white h-[310px] rounded-2xl p-14 flex flex-col justify-center items-center gap-y-5">
+                <div class="about_card">
                     <div class="w-[86px] h-[85px]">
                         <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54.4839 77.6121L78.1121 53.9839C78.7699 53.3261 79.2917 52.5452 79.6476 51.6858C80.0036 50.8264 80.1869 49.9053 80.1869 48.975C80.1869 48.0448 80.0036 47.1237 79.6476 46.2643C79.2917 45.4049 78.7699 44.624 78.1121 43.9662L39.4583 5.3125H5.8125V38.9583L44.4662 77.6121C45.124 78.2699 45.9049 78.7917 46.7643 79.1476C47.6237 79.5036 48.5448 79.6869 49.475 79.6869C50.4053 79.6869 51.3264 79.5036 52.1858 79.1476C53.0452 78.7917 53.8261 78.2699 54.4839 77.6121Z" stroke="#C62026" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
@@ -152,20 +156,20 @@
                         </svg>
                     </div>
 
-                    <div class="text-2xl text-center font-bold">We offer Upfront Pricing, no extra costs</div>
+                    <div class="text-xl md:text-2xl md:text-center font-bold">We offer Upfront Pricing, no extra costs</div>
                 </div>
             </div>
             <div class="w-full lg:w-1/4 px-2">
-                <div class="drop-shadow-md bg-white h-[310px] rounded-2xl p-14 flex flex-col justify-center items-center gap-y-5">
-                    <div>
-                        <?= renderImg('on-the-spot.png', 'icons') ?>
+                <div class="about_card">
+                    <div class="w-[86px] h-[85px]">
+                        <?= renderImg('on-the-spot.png', 'icons', 'w-[86px]') ?>
                     </div>
 
-                    <div class="text-2xl text-center font-bold">On the spot Emergency Repairs</div>
+                    <div class="text-xl md:text-2xl md:text-center font-bold">On the spot Emergency Repairs</div>
                 </div>
             </div>
             <div class="w-full lg:w-1/4 px-2">
-                <div class="drop-shadow-md bg-white h-[310px] rounded-2xl p-14 flex flex-col justify-center items-center gap-y-5">
+                <div class="about_card">
                     <div class="w-[86px] h-[85px]">
                         <svg width="86" height="85" viewBox="0 0 86 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M40.8316 34.1577C40.8316 35.7577 40.4796 37.2137 39.7756 38.5257C39.1036 39.8377 38.1436 40.8777 36.8956 41.6457C35.6476 42.4137 34.2236 42.7977 32.6236 42.7977C31.0556 42.7977 29.6476 42.4297 28.3996 41.6937C27.1836 40.9257 26.2236 39.8857 25.5196 38.5737C24.8476 37.2617 24.5116 35.8217 24.5116 34.2537C24.5116 32.6537 24.8476 31.1977 25.5196 29.8857C26.2236 28.5737 27.1996 27.5337 28.4476 26.7657C29.6956 25.9977 31.1196 25.6137 32.7196 25.6137C34.2876 25.6137 35.6796 25.9977 36.8956 26.7657C38.1436 27.5017 39.1036 28.5257 39.7756 29.8377C40.4796 31.1497 40.8316 32.5897 40.8316 34.1577ZM27.8716 59.5977L52.3996 25.9977H58.1116L33.5836 59.5977H27.8716ZM35.7916 34.2537C35.7916 33.0697 35.4876 32.0617 34.8796 31.2297C34.3036 30.3977 33.5516 29.9817 32.6236 29.9817C31.6636 29.9817 30.9116 30.3817 30.3676 31.1817C29.8236 31.9817 29.5516 32.9737 29.5516 34.1577C29.5516 35.3417 29.8396 36.3497 30.4156 37.1817C31.0236 38.0137 31.7916 38.4297 32.7196 38.4297C33.6796 38.4297 34.4316 38.0297 34.9756 37.2297C35.5196 36.4297 35.7916 35.4377 35.7916 34.2537ZM61.4716 51.3417C61.4716 52.9417 61.1196 54.3977 60.4156 55.7097C59.7436 57.0217 58.7836 58.0617 57.5356 58.8297C56.2876 59.5977 54.8636 59.9817 53.2636 59.9817C51.6956 59.9817 50.2876 59.6137 49.0396 58.8777C47.8236 58.1097 46.8636 57.0697 46.1596 55.7577C45.4876 54.4457 45.1516 53.0057 45.1516 51.4377C45.1516 49.8377 45.4876 48.3817 46.1596 47.0697C46.8636 45.7577 47.8396 44.7177 49.0876 43.9497C50.3356 43.1817 51.7596 42.7977 53.3596 42.7977C54.9276 42.7977 56.3196 43.1817 57.5356 43.9497C58.7836 44.6857 59.7436 45.7097 60.4156 47.0217C61.1196 48.3337 61.4716 49.7737 61.4716 51.3417ZM56.4316 51.4377C56.4316 50.2537 56.1276 49.2457 55.5196 48.4137C54.9436 47.5817 54.1916 47.1657 53.2636 47.1657C52.3036 47.1657 51.5516 47.5657 51.0076 48.3657C50.4636 49.1657 50.1916 50.1577 50.1916 51.3417C50.1916 52.5257 50.4796 53.5337 51.0556 54.3657C51.6636 55.1977 52.4316 55.6137 53.3596 55.6137C54.3196 55.6137 55.0716 55.2137 55.6156 54.4137C56.1596 53.6137 56.4316 52.6217 56.4316 51.4377Z" fill="#C62026" />
@@ -173,11 +177,11 @@
                         </svg>
                     </div>
 
-                    <div class="text-2xl text-center font-bold">Discounts for Seniors & New Customers</div>
+                    <div class="text-xl md:text-2xl md:text-center font-bold">Discounts for Seniors & New Customers</div>
                 </div>
             </div>
             <div class="w-full lg:w-1/4 px-2">
-                <div class="drop-shadow-md bg-white h-[310px] rounded-2xl p-14 flex flex-col justify-center items-center gap-y-5">
+                <div class="about_card">
                     <div class="w-[85px] h-[85px]">
                         <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.34082 0H79.6592C81.1291 0 82.4651 0.926867 83.4313 2.41335C84.3975 3.90118 85 5.95535 85 8.21669V76.7793C85 79.0446 84.3975 81.1002 83.4313 82.5866C82.4651 84.0745 81.1291 85 79.6592 85H5.34082C3.87096 85 2.53489 84.0731 1.56606 82.5866C0.599849 81.1002 0 79.0446 0 76.7793V8.21804C0 5.9567 0.599849 3.90118 1.56606 2.4147C2.53489 0.928212 3.87096 0.00134523 5.34082 0.00134523V0ZM79.6592 4.40026H5.34082C4.65966 4.40026 4.03971 4.83074 3.59115 5.52488C3.13996 6.21902 2.86015 7.17279 2.86015 8.21669V76.7793C2.86015 77.8272 3.13996 78.781 3.59115 79.4751C4.03971 80.1652 4.65966 80.5957 5.34082 80.5957H79.6592C80.3386 80.5957 80.9603 80.1652 81.4089 79.4751C81.8601 78.781 82.1399 77.8272 82.1399 76.7793V8.21804C82.1399 7.17279 81.8601 6.21633 81.4089 5.52622C80.9603 4.83208 80.3378 4.40161 79.6592 4.40161V4.40026Z" fill="#C62026" />
@@ -190,39 +194,39 @@
                         </svg>
                     </div>
 
-                    <div class="text-2xl text-center font-bold">Licensed & Experienced Plumbers</div>
+                    <div class="text-xl md:text-2xl md:text-center font-bold">Licensed & Experienced Plumbers</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-36">
+<section class="py-16 md:py-36">
     <div class="container">
-        <div class="flex flex-wrap -mx-2">
+        <div class="flex flex-wrap md:-mx-2 gap-y-5">
             <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[520px] bg-[url('../images/background/blocked-drains.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-[60px] pb-0">
-                        <div class="text-2xl font-bold">Blocked Drains from</div>
+                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/blocked-drains.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
+                        <div class="text-xl md:text-2xl font-bold">Blocked Drains from</div>
                         <div class="text-5xl font-bold">$69</div>
                     </div>
                     <?= renderImg('vector.png', 'background', 'w-full') ?>
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[520px] bg-[url('../images/background/tap-repairs.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-[60px] pb-0">
-                        <div class="text-2xl font-bold">Tap Repairs from</div>
+                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/tap-repairs.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
+                        <div class="text-xl md:text-2xl font-bold">Tap Repairs from</div>
                         <div class="text-5xl font-bold">$79</div>
                     </div>
                     <?= renderImg('vector.png', 'background', 'w-full') ?>
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-2">
-                <div class="rounded-2xl h-[520px] bg-[url('../images/background/free.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                    <div class="bg-primary w-full text-white p-[60px] pb-0">
+                <div class="rounded-2xl h-[430px] md:h-[520px] bg-[url('../images/background/free.jpg')] bg-no-repeat bg-cover overflow-hidden">
+                    <div class="bg-primary w-full text-white p-10 md:p-[60px] pb-0 md:pb-0">
                         <div class="text-5xl font-bold">Free</div>
-                        <div class="text-2xl font-bold">Home Inspection with any service valued at over $150</div>
+                        <div class="text-xl md:text-2xl font-bold">Home Inspection with any service valued at over $150</div>
                     </div>
                     <?= renderImg('vector.png', 'background', 'w-full') ?>
                 </div>
@@ -231,23 +235,23 @@
     </div>
 </section>
 
-<section class="service h-[900px] bg-[url('../images/background/service.jpg')] bg-no-repeat bg-cover">
-    <div class="container text-center text-white py-36">
+<section class="service h-[900px] bg-[url('../images/background/service_sm.jpg')] md:bg-[url('../images/background/service.jpg')] bg-no-repeat bg-cover">
+    <div class="container text-center text-white py-10 md:py-36">
         <div class="flex flex-wrap justify-center items-center">
-            <div class="w-full lg:w-1/2 flex flex-col items-center">
+            <div class="w-10/12 lg:w-1/2 flex flex-col items-center">
                 <svg width="44" height="90" viewBox="0 0 44 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.535 90C11.8247 65.5911 36.6537 57.235 43.8766 30.12L37.832 19.2954C23.6309 53.7852 5.29039 55.4488 11.9395 80.8083C13.1255 85.1703 15.88 87.4088 18.535 90Z" fill="#C62026" />
                     <path d="M34.6109 13.6303L26.9977 0C16.7524 34.2598 4.22702 34.9268 0.76856 52.6509C-1.06779 62.0725 2.04635 68.1977 6.96623 74.9209C5.40534 45.0001 23.5622 46.2573 34.6109 13.6303Z" fill="white" />
                 </svg>
 
-                <div class="text-6xl font-bold py-12">Bonify Services</div>
-                <div class="text-xl">Our highly experienced and professional team can do it all. No job is either too small or too big for our team</div>
+                <div class="text-4xl md:text-6xl font-bold pt-10 pb-8 md:py-12">Bonify Services</div>
+                <div class="text-lg md:text-xl">Our highly experienced and professional team can do it all. No job is either too small or too big for our team</div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-light-grey pb-36">
+<section class="bg-light-grey pb-16 md:pb-36">
     <div class="container">
         <?php
         $services = [
@@ -301,15 +305,15 @@
             ],
         ]
         ?>
-        <div class="flex flex-wrap gap-y-5 -mx-2">
+        <div class="flex flex-wrap gap-y-5 md:-mx-2">
             <?php foreach ($services as $index => $service) : ?>
                 <div class="w-full lg:w-1/3 h-inherit px-2">
                     <div class="bg-white rounded-2xl drop-shadow-md overflow-hidden h-full flex flex-col">
                         <div class="h-[200px]"><?= renderImg('service-' . ($index + 1) . '.jpg', 'lib', 'w-full h-full') ?></div>
-                        <div class="p-[60px] flex-1 flex flex-col justify-between items-start">
+                        <div class="p-10 md:p-[60px] flex-1 flex flex-col justify-between items-start">
                             <div class="flex-1">
-                                <div class="text-dark text-2xl font-bold"><?= $service['title'] ?></div>
-                                <div class="text-grey text-xl py-7"><?= $service['description'] ?></div>
+                                <div class="text-dark text-xl md:text-2xl font-bold"><?= $service['title'] ?></div>
+                                <div class="text-grey text-base md:text-xl py-7"><?= $service['description'] ?></div>
                             </div>
                             <a href="#" class="borderBtn border-grey text-grey">Enquire</a>
                         </div>
@@ -320,13 +324,13 @@
     </div>
 </section>
 
-<section class="about py-36">
+<section class="about py-16 md:py-36">
     <div class="container">
-        <div class="about_wrapper rounded-2xl h-[600px] flex flex-wrap overflow-hidden">
+        <div class="about_wrapper rounded-2xl md:h-[600px] flex flex-wrap overflow-hidden">
             <div class="w-full lg:w-1/2 flex flex-col items-center justify-center h-inherit text-center">
-                <div class="w-11/12 xl:w-9/12">
-                    <div class="text-white text-5xl font-bold">What do <span class="text-primary">we do?</span></div>
-                    <div class="text-white text-xl py-12">
+                <div class="w-10/12 xl:w-9/12 pt-10 md:pt-0">
+                    <div class="text-white text-3xl md:text-5xl font-bold">What do <span class="text-primary">we do?</span></div>
+                    <div class="text-white text-base md:text-xl py-10 md:py-12">
                         Bonify Plumbing and Maintenance is a family-owned company unlike our competitors, so you know that you’re getting a reputable and professional local Melbourne plumbing and maintenance company offering quality and precise emergency plumbing works. Bonify Plumbing and Maintenance is reliable and focused on customer satisfaction from the beginning to the end. We operate 24/7 so we can always be there when you need a trustworthy plumber to get you out of trouble!
                     </div>
                 </div>
@@ -357,11 +361,17 @@
     </div>
 </section>
 
-<footer class="bg-dark py-5">
+<footer class="bg-dark py-10 md:py-5">
     <div class="container">
-        <div class="flex flex-wrap justify-between items-center">
-            <div><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
-            <div class="text-[#DADADA] text-sm">
+        <div class="flex flex-wrap justify-center md:justify-between items-center gap-y-14">
+            <div class="md:visible"><a href="./"><?= renderImg('footer_logo_sm.png', 'logo') ?></a></div>
+            <div class="hidden md:visible"><a href="./"><?= renderImg('logo.png', 'logo') ?></a></div>
+            <div class="w-full md:hidden text-[#DADADA] text-sm text-center flex flex-col gap-y-5">
+                <div>Copyright <?= date('Y') ?></div>
+                <div><?= $site ?></div>
+                <div>All Rights Reserved</div>
+            </div>
+            <div class="text-[#DADADA] text-sm hidden md:visible">
                 Copyright <?= date('Y') ?> <span class="px-10">|</span> <?= $site ?> <span class="px-10">|</span> All Rights Reserved
             </div>
             <div><a href="https://www.aiims.com.au" target="_blank"><?= renderImg('aiims.png', 'logo') ?></a></div>

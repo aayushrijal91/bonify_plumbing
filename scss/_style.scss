@@ -17,7 +17,7 @@ section.heroForm {
 
             input,
             select {
-                @apply w-full outline-none text-xl transition ease-in-out delay-100;
+                @apply w-full outline-none text-base md:text-xl transition ease-in-out delay-100;
             }
 
             &:focus {
@@ -30,6 +30,7 @@ section.heroForm {
 section.about {
     .about_wrapper {
         background: linear-gradient(90deg, #000000 0%, rgba(52, 51, 51, 0.00) 100%), imgUrl('about.jpg');
+        background-size: cover;
     }
 
     .gallery {
@@ -45,5 +46,9 @@ section.about {
                 height: 100%;
             }
         }
+    }
+
+    .about_card {
+        @apply  drop-shadow-md bg-white h-[140px] md:h-[310px] rounded-2xl p-10 md:p-14 flex md:flex-col justify-center items-center gap-y-5 space-x-5;
     }
 }
