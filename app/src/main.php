@@ -97,7 +97,8 @@
                 <?= renderImg('form.jpg', 'lib', 'rounded-2xl w-full h-full') ?>
             </div>
             <div class="w-full lg:w-1/2 px-2 h-inherit">
-                <form action="" class="form rounded-2xl bg-white h-full w-full p-10 md:px-20 lg:px-10 xl:px-20 md:py-[60px] flex flex-col items-center">
+                <form action="./src/form.php" class="form rounded-2xl bg-white h-full w-full p-10 md:px-20 lg:px-10 xl:px-20 md:py-[60px] flex flex-col items-center" id="heroForm" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
                     <div class="text-center text-3xl md:text-5xl font-bold"><span class="text-primary">Schedule</span> With Bonify Today</div>
                     <div class="py-10 md:py-16 w-full flex flex-col gap-y-10">
                         <div class="form-control">
@@ -253,7 +254,7 @@
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-2">
                 <div class="rounded-2xl h-[430px] lg:h-[520px] bg-[url('../images/background/tap-repairs.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
+                    <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
                         <div class="text-xl md:text-2xl font-bold">Tap Repairs from</div>
                         <div class="text-5xl font-bold">$79</div>
                     </div>
@@ -262,7 +263,7 @@
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-2">
                 <div class="rounded-2xl h-[430px] lg:h-[520px] bg-[url('../images/background/free.jpg')] bg-no-repeat bg-cover overflow-hidden">
-                <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
+                    <div class="bg-primary w-full text-white p-10 xl:p-[60px] pb-0 xl:pb-0">
                         <div class="text-5xl font-bold">Free</div>
                         <div class="text-xl md:text-2xl font-bold">Home Inspection with any service valued at over $150</div>
                     </div>
@@ -346,14 +347,14 @@
         <div class="flex flex-wrap gap-y-5 lg:-mx-2">
             <?php foreach ($services as $index => $service) : ?>
                 <div class="w-full md:w-1/2 lg:w-1/3 h-inherit px-2">
-                    <div class="bg-white rounded-2xl drop-shadow-md overflow-hidden h-full flex flex-col">
+                    <div class="bg-white rounded-2xl drop-shadow-md overflow-hidden h-full flex flex-col hover:scale-[1.02] transition-all duration-150">
                         <div class="h-[200px]"><?= renderImg('service-' . ($index + 1) . '.jpg', 'lib', 'w-full h-full') ?></div>
                         <div class="p-10 lg:p-8 xl:p-[60px] flex-1 flex flex-col justify-between items-start">
                             <div class="flex-1">
                                 <div class="text-dark text-xl md:text-2xl font-bold"><?= $service['title'] ?></div>
                                 <div class="text-grey text-base xl:text-xl py-7"><?= $service['description'] ?></div>
                             </div>
-                            <a href="#" class="borderBtn border-grey text-grey">Enquire</a>
+                            <a href="#" class="borderBtn hover:bg-primary border-grey hover:border-primary text-grey hover:text-white transition-all duration-150">Enquire</a>
                         </div>
                     </div>
                 </div>
