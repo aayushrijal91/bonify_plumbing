@@ -118,7 +118,11 @@
                                 </svg>
                             </div>
 
-                            <input type="tel" name="phone" placeholder="Number" required>
+                            <div>
+
+                                <input type="tel" name="phone" id="phoneInput" placeholder="Number" required>
+                                <div class="text-sm text-primary hidden" id="phoneError">Invalid Phone Number</div>
+                            </div>
                         </div>
                         <div class="form-control">
                             <div class="icon">
